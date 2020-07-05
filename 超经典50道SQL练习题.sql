@@ -6,7 +6,7 @@ GO
 
 
 select A.Sid,A.CId,A.score as course01score, B.CId,B.score as course02score 
-from SC as A join SC as B on A.Sid = B.Sid and A.Cid = '01' and B.Cid = '02' and A.score > B.score
+from SC as A join SC as B on A.Sid = B.Sid and A.Cid = '01' and B.Cid = '02' and A.score > B.score;
 
 
 select A.*,B.Cid,B.score from (select * from SC where Cid='01')A 
